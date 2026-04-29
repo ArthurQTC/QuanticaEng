@@ -61,7 +61,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
       >
         <div className="h-full flex flex-col">
           {/* Logo */}
-          <div className="p-6 flex items-center gap-3">
+          <a href="/" className="p-6 flex items-center gap-3 hover:opacity-80 transition-opacity">
             <div className="w-8 h-8 rounded-lg overflow-hidden flex items-center justify-center shrink-0">
               <img src="https://onpynlltbethkpdyxyiv.supabase.co/storage/v1/object/public/Quantica%20EAP/Quantica_page-0004.jpg" alt="Quântica Logo" className="w-full h-full object-cover" />
             </div>
@@ -74,7 +74,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
                 Quântica<span className="text-emerald-500"> Analytics</span>
               </motion.span>
             )}
-          </div>
+          </a>
 
           {/* Navigation */}
           <nav className="flex-1 px-3 space-y-1 overflow-y-auto">
@@ -140,12 +140,12 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
             </button>
             
             {/* Mobile Logo */}
-            <div className="lg:hidden flex items-center gap-2">
+            <a href="/" className="lg:hidden flex items-center gap-2">
               <div className="w-6 h-6 rounded bg-primary flex items-center justify-center">
                 <Building2 className="text-primary-foreground h-4 w-4" />
               </div>
               <span className="font-display font-bold text-sm">Quântica</span>
-            </div>
+            </a>
           </div>
 
           <div className="flex items-center gap-3">
